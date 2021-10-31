@@ -1,0 +1,11 @@
+[project]
+name = "ft"
+requirements = []
+costs_version = 1
+[contracts.ft-trait]
+path = "contracts/ft-trait.clar"
+depends_on = []
+
+[contracts.my-ft]
+path = "contracts/my-ft.clar"
+depends_on = [ft-trait]
